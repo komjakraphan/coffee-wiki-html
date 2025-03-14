@@ -35,6 +35,16 @@
             padding-right: 20px;
             font-family: Arial, Helvetica, sans-serif;
         }
+        input {
+            background-color: #f5f5f5;
+            height: 16px;
+            border-radius: 6px;
+        }
+        footer {
+            background-color: beige;
+            padding-left: 50px;
+            padding-top: 20px;
+        }
     </style>
 </head>
 
@@ -113,16 +123,16 @@
         <form>
             <h2>Newsletter sign up</h2><br>
             <label for="name"> Name</label>
-            <input type="text" id="name" name="name" value="John Doe"><br>
-            <label for="email">email</label>
-            <input type="email" id="email" name="email" value="Jdoe@email.com"><br>
+            <input type="text" id="name" name="name" value="" required><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" value="" required><br>
             Hot or iced?<br>
             <input type="radio" name="hot" value="hot">Hot<br>
             <input type="radio" name="iced" value="iced">Iced<br>
             <label for="coffee-type">How do you like your coffee?</label><br>
             <select id="coffee-type" name="coffee-type">
                 <option value="black">Black</option>
-                <option value="sugar">Sugar</option>
+                <option value="sugar" selected>Sugar</option>
                 <option value="cream">Cream</option>
                 <option value="cream-sugar">Cream and Sugar</option>
             </select><br>
