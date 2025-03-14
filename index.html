@@ -32,14 +32,12 @@
 </head>
 <body>
     <header>
-        <img src="https://en.wikipedia.org/static/images/mobile/copyright/wikipedia-wordmark-en.svg" class="logo" height="25px" alt="wikipedia logo"><br>
-        <input>
-        <button>Search</button>
+        <h1>My Coffee Page</h1>
         <nav>
             <ul>
-                <li><a href=https://donate.wikimedia.org/w/index.php?title=Special:LandingPage&country=US&uselang=en&wmf_medium=sidebar&wmf_source=donate&wmf_campaign=en.wikipedia.org>Donate</a></li>
-                <li><a href="https://en.wikipedia.org/w/index.php?title=Special:CreateAccount&returnto=Coffee">Create Account</a></li>
-                <li><a href="https://en.wikipedia.org/w/index.php?returnto=Coffee&title=Special:UserLogin&centralAuthAutologinTried=1&centralAuthError=Not+centrally+logged+in">Log in</a></li>
+                <li><a href="./">Shop</a></li>
+                <li><a href="./">Learn</a></li>
+                <li><a href="./">Log in</a></li>
             </ul>
         </nav>
     </header>
@@ -94,7 +92,31 @@
         <p>Coffee production begins when the seeds from coffee cherries (the Coffea plant's fruits) are separated to produce unroasted green coffee beans. The "beans" are roasted and then ground into fine particles. Coffee is brewed from the ground roasted beans, which are typically steeped in hot water before being filtered out. It is usually served hot, although chilled or iced coffee is common. Coffee can be prepared and presented in a variety of ways (e.g., espresso, French press, caffè latte, or already-brewed canned coffee). Sugar, sugar substitutes, milk, and cream are often added to mask the bitter taste or enhance the flavor.</p>
     </main>
     <footer>
-        <h2>Footer</h2>
+        <form>
+            <h2>Newsletter sign up</h2><br>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" value="Doe"><br>
+            Hot or iced?<br>
+            <input type="radio" name="hot" value="hot">Hot<br>
+            <input type="radio" name="iced" value="iced">Iced<br>
+            <label for="coffee-type">How do you like your coffee?</label><br>
+            <select id="coffee-type" name="coffee-type">
+                <option value="black">Black</option>
+                <option value="sugar">Sugar</option>
+                <option value="cream">Cream</option>
+                <option value="cream-sugar">Cream and Sugar</option>
+            </select><br>
+            When do you drink your coffee?<br>
+            <input type="checkbox" name="morning" value="yes">Morning<br>
+            <input type="checkbox" name="afternoon" value="yes">afternoon<br>
+            <input type="checkbox" name="night" value="yes">night<br>
+            <textarea id="message" name="message" role="4" cols="50">
+                Tell me why you love coffee?
+            </textarea><br>
+            <button type="submit">Submit</button>
+        </form>
     </footer>
 </body>
 </html>
